@@ -15,24 +15,25 @@
 <p>Thank you for taking the time to help us improve the platforrm</p>
 
 
-
-      < id="survey-form">
+<div class="survey-form">
+  
+  <form action="">
 
   <label for="Name">Name</label><br>
 
-  <input type="text" id="name" name="fname" placeholder="Enter your name"><br>
+  <input type="text" class="text" id="name" name="fname" placeholder="Enter your name"><br>
 
   <label for="Email">Email</label><br>
 
-  <input type="text" id="email" name="email" placeholder="Enter your Email"><br>
+  <input type="text" class="text" id="email" name="email" placeholder="Enter your Email"><br>
 
   <label>Age(optional)</label><br>
 
-  <input type="text" id="age" name="age" placeholder="Age"><br>
+  <input type="text" class="text" id="age" name="age" placeholder="Age"><br>
 
   <p>Which option best describes your current role?</p><br>
   <label for="role">Select current role</label><br>
-  <select name="role" id="role">
+  <select name="role" id="role" class="text">
     <option value="">select current role</option>
     <option value="">Student</option>
     <option value="">Full Time Job</option>
@@ -41,16 +42,16 @@
     <option>Other</option>
   </select>
   <p>Would you recommend freeCodeCamp to a friend?</p>
-<input type="radio" value="Definitely">
-<label>Definitely</label><br>
-<input type="radio" value="Maybe">
-<label>Maybe</label><br>
-<input type="radio" value="Notsure">
-<label>Not Sure</label><br>
-</form>
+<input type="radio" class="radio" value="Definitely">
+<label class="radio-label">Definitely</label><br>
+<input type="radio" class="radio" value="Maybe">
+<label class="radio-label">Maybe</label><br>
+<input type="radio" class="radio" value="Notsure">
+<label class="radio-label">Not Sure</label><br>
+
 <p>What is your favorite of freeCodeCamp?</p>
     
-    <select>
+    <select class="text">
       <option value="Select an option">Select an option</option>
       <option value="challages">Challages</option>
       <option value="projects">Projects</option>
@@ -60,46 +61,50 @@
     <p>What would you like to see improved? (check all that apply)</p>
     
 
-    <input type="checkbox" id="front-end" name="front-end" value="fron-end">
+    <input class="check" type="checkbox" id="front-end" name="front-end" value="fron-end">
     <label>Front-end Project</label><br>
 
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Back-end Project</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Data Visualization</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Challenges</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Open Source Community</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Gitter help rooms</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>Videos</label><br>
 
-    <input type="checkbox" value="">
+    <input class="check" type="checkbox" value="">
     <label>City Meetups</label><br>
 
-    <input type="checkbox" value="wikicitymeetups">
+    <input class="check" type="checkbox" value="wikicitymeetups">
     <label>Wiki</label><br> 
     
-    <input type="checkbox" value="forum">
+    <input class="check" type="checkbox" value="forum">
     <label>Forum</label><br>
 
-    <input type="checkbox" value="Additional">
+    <input class="check" type="checkbox" value="Additional">
     <label>Additional Courses</label><br>
+    <br>
+    <label class="textarea-label" for="comments">Any comments or suggestions?</label><br>
 
-    <label for="comments">Any comments or suggestions?</label><br>
-    <textarea  rows="4" cols="50"
-    placeholder="Enter your comment here">Enter comment here</textarea><br>
+    <textarea  rows="4" cols="" class="text2"
+    placeholder="Enter your comment here"></textarea><br>
     
-    <input type="submit" value="submit">
+    <input type="submit" class="text" value="submit">
   </form>    
+
+</div>
+
 
     <script  src="js/index.js"></script>
   </body>
